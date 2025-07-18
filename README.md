@@ -58,3 +58,12 @@ You can also type a number by pressing the key again after the last character of
 - "227*#" → "b"
 - "4433555 555666#" → "hello"
 - "8 88777444666*664#" → "turing"
+
+## Code Documentation
+
+The `OldPhonePad` directory contains `PhonePadConverter.cs` which has the actual working code. The flow is described briefly below:
+
+- The main method takes user input which is the sequence of key pressings and calls the actual solver method `OldPhonePad`
+- `OldPhonePad` validates the input using a helper method named `IsInputValid`
+- A dictionary containing the key to character mappings is kept for ease of access
+- The `OldPhonePad` returns the designated string text after processing the input key press sequence
