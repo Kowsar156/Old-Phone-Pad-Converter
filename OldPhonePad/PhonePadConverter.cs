@@ -88,7 +88,10 @@ public class PhonePadConverter
             }
             else
             {
-                // We find the key, then take the mod of the count with respect to the total number of possible characters in that key (minus one as index starts from 0) to find the intended character, and convert it to string before appending after the output
+                // We find the key, then take the mod of the count 
+                // with respect to the total number of possible characters 
+                // in that key (minus one as index starts from 0) to find the intended character, 
+                // and convert it to string before appending after the output
                 output += numPad[text[i]][(j - i - 1) % numPad[text[i]].Length].ToString();
             }
             i = j;
